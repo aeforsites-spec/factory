@@ -34,12 +34,16 @@ window.SITE_CONFIG = {
 
   // العنوان
   address: {
-    ar: "جمهورية مصر العربية",
-    en: "Egypt"
+    ar: "القاهرة — جمهورية مصر العربية",
+    en: "Cairo, Egypt"
   },
 
   // رابط الموقع على خرائط جوجل (اتركه فارغاً "" لإخفائه)
-  mapUrl: "",
+  mapUrl: "https://maps.app.goo.gl/qR1ZmdG1Ywss5sPM6",
+
+  // إحداثيات المصنع على الخريطة (لعرض الخريطة في صفحة تواصل معنا)
+  mapLat: 30.0661441,
+  mapLng: 31.2285928,
 
   // ساعات العمل
   workingHours: {

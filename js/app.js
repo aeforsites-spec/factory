@@ -134,6 +134,7 @@
             (HAS_FB ? '<a href="' + esc(C.facebookUrl) + '" target="_blank" rel="noopener" aria-label="Facebook" class="s-fb">' + ICON.fb + "</a>" : "") +
           "</div>" +
           (C.phone ? '<p class="ltr-num">' + esc(C.phone) + "</p>" : "") +
+          (C.mapUrl ? '<a class="footer-map" target="_blank" rel="noopener" href="' + esc(C.mapUrl) + '">' + ICON.pin + "<span>" + esc(L(C.address)) + "</span></a>" : "") +
         "</div>" +
       "</div>" +
       '<div class="footer-bottom">© ' + year + " " + esc(L(C.companyName)) + " — " + t("rights") + "</div>";
@@ -386,7 +387,15 @@
             ? '<a class="' + cls + '" href="' + esc(it.href) + '"' + (it.ext ? ' target="_blank" rel="noopener"' : "") + ">" + inner + "</a>"
             : '<div class="' + cls + '">' + inner + "</div>";
         }).join("") + "</div>" +
-      "</div></section>";
+      "</div></section>" +
+      (C.mapLat && C.mapLng ?
+        '<section class="section section-alt map-section"><div class="container"><h2 class="section-title">' + t("map_title") + "</h2>" +
+          '<div class="map-frame"><iframe title="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=' +
+            C.mapLat + "," + C.mapLng + "&z=16&hl=" + lang + '&output=embed"></iframe></div>' +
+          '<div class="map-actions">' +
+            '<a class="btn btn-primary" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + C.mapLat + "," + C.mapLng + '">' + ICON.pin + "<span>" + t("map_directions") + "</span></a>" +
+            (C.mapUrl ? '<a class="btn btn-outline" target="_blank" rel="noopener" href="' + esc(C.mapUrl) + '">' + t("c_map") + "</a>" : "") +
+          "</div></div></section>" : "");
     var ms = $(".contact-card.c-ms");
     if (ms) ms.addEventListener("click", function () { copyText(msg); toast(t("messenger_copied")); });
   };

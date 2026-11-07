@@ -55,7 +55,9 @@ window.I18N = {
     c_email: "البريد الإلكتروني",
     c_address: "العنوان",
     c_hours: "مواعيد العمل",
-    c_map: "افتح على الخريطة",
+    c_map: "افتح على خرائط جوجل",
+    map_title: "موقع المصنع",
+    map_directions: "اعرف الطريق للمصنع",
 
     footer_links: "روابط",
     footer_follow: "تابعنا",
@@ -122,7 +124,9 @@ window.I18N = {
     c_email: "Email",
     c_address: "Address",
     c_hours: "Working hours",
-    c_map: "Open in Maps",
+    c_map: "Open in Google Maps",
+    map_title: "Find our factory",
+    map_directions: "Get directions",
 
     footer_links: "Links",
     footer_follow: "Follow us",
