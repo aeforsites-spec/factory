@@ -21,10 +21,10 @@ window.SITE_CONFIG = {
   whatsappNumber: "201020204027",
 
   // اسم صفحة الفيسبوك كما يظهر في الرابط facebook.com/XXXX  (يُستخدم للماسنجر m.me/XXXX)
-  messengerUsername: "YourPageName",
+  messengerUsername: "asabergad",
 
   // رابط صفحة الفيسبوك كاملاً
-  facebookUrl: "https://www.facebook.com/YourPageName",
+  facebookUrl: "https://www.facebook.com/asabergad",
 
   // رقم الهاتف كما تحب أن يظهر (اتركه فارغاً "" لإخفائه)
   phone: "01020204027",

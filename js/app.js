@@ -62,6 +62,8 @@
       .replace("{url}", absUrl(productHref(p.code, img)));
   }
   var msHref = "https://m.me/" + encodeURIComponent(C.messengerUsername || "");
+  // Messenger fills the text in where it supports it; the message is also copied as a fallback
+  function msHrefWith(text) { return msHref + "?text=" + encodeURIComponent(text); }
   // hide Messenger / Facebook buttons until real links are filled in config.js
   var HAS_MS = !!C.messengerUsername && C.messengerUsername !== "YourPageName";
   var HAS_FB = !!C.facebookUrl && C.facebookUrl.indexOf("YourPageName") === -1;
@@ -320,6 +322,7 @@
       $all("#thumbs button").forEach(function (b) { b.classList.toggle("active", +b.getAttribute("data-i") === cur); });
       var msg = productMessage(p, cur);
       $("#wa-btn").href = waHref(msg);
+      if ($("#ms-btn")) $("#ms-btn").href = msHrefWith(msg);
       renderFloating(waHref(msg));
       // every "contact us" link on this page carries the product being viewed
       $all('a[href^="contact.html"]').forEach(function (a) {
@@ -366,7 +369,7 @@
     var items = [
       { cls: "c-wa", icon: "wa", title: t("c_whatsapp"), val: "", href: waHref(msg), ext: true }
     ];
-    if (HAS_MS) items.push({ cls: "c-ms", icon: "ms", title: t("c_messenger"), val: "", href: msHref, ext: true, copy: true });
+    if (HAS_MS) items.push({ cls: "c-ms", icon: "ms", title: t("c_messenger"), val: "", href: msHrefWith(msg), ext: true, copy: true });
     if (HAS_FB) items.push({ cls: "c-fb", icon: "fb", title: t("c_facebook"), val: "", href: C.facebookUrl, ext: true });
     PHONES.forEach(function (ph) { items.push({ icon: "phone", title: t("c_phone"), val: ph, href: "tel:" + ph.replace(/[^\d+]/g, ""), ltr: true }); });
     if (C.email) items.push({ icon: "mail", title: t("c_email"), val: C.email, href: "mailto:" + C.email, ltr: true });
