@@ -72,3 +72,9 @@ powershell -ExecutionPolicy Bypass -File tools\serve.ps1
 powershell -ExecutionPolicy Bypass -File tools\import-photos.ps1 -Source "F:\site"
 ```
 الأداة تنسخ الصور إلى `images/products/<الكود>/1.jpg, 2.jpg ...` وتصغّر الكبير منها.
+
+## قبل كل رفع للموقع
+شغّل الأمر ده عشان المتصفحات تجيب النسخة الجديدة فوراً:
+```
+powershell -ExecutionPolicy Bypass -File tools\bump-version.ps1
+```
