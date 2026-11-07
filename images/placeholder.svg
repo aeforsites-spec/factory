@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#e7eaee"/>
+  <g fill="none" stroke="#9aa5b1" stroke-width="10" stroke-linejoin="round">
+    <rect x="250" y="210" width="300" height="190" rx="14"/>
+    <circle cx="400" cy="305" r="58"/>
+    <path d="M320 210l22-40h116l22 40"/>
+  </g>
+  <circle cx="400" cy="305" r="24" fill="#9aa5b1"/>
+  <text x="400" y="470" text-anchor="middle" font-family="Tahoma, Arial" font-size="30" fill="#7b8794">صورة المنتج  •  Product photo</text>
+</svg>
