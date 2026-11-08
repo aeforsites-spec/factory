@@ -6,15 +6,14 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Admin</title>
 <style>body{font-family:system-ui,sans-serif;background:#f5f5f5;color:#222;display:grid;place-items:center;min-height:100vh;margin:0;padding:16px;text-align:center}</style>
-<script src="data/config.js"></script>
+<script src="data/config.js?v=202611082150"></script>
 </head>
 <body>
-<!-- Shortcut only: no numbers live here. It forwards to the private GoatCounter
-     dashboard, which asks for your GoatCounter login. -->
+<!-- Shortcut only: no numbers live here. It forwards to Google Analytics,
+     which asks for your Google login. -->
 <p id="m">…</p>
 <script>
-  var code = (window.SITE_CONFIG || {}).goatcounterCode;
-  if (code) location.replace("https://" + code + ".goatcounter.com");
+  if ((window.SITE_CONFIG || {}).googleAnalyticsId) location.replace("https://analytics.google.com/analytics/web/");
   else document.getElementById("m").textContent = "عدّاد الزيارات لم يُفعّل بعد — Analytics not set up yet";
 </script>
 </body>

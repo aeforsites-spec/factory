@@ -26,9 +26,9 @@ window.SITE_CONFIG = {
   // رابط صفحة الفيسبوك كاملاً (فارغ "" = مخفي). لإظهاره: "https://www.facebook.com/asabergad"
   facebookUrl: "",
 
-  // عدّاد الزيارات الخاص (GoatCounter) — لا يظهر للزوار. اكتب الكود فقط، مثلاً "factory"
-  // الإحصائيات تراها أنت فقط على: https://الكود.goatcounter.com   (فارغ "" = مُطفأ)
-  goatcounterCode: "",
+  // عدّاد الزيارات الخاص (Google Analytics) — لا يظهر للزوار. اكتب "معرّف القياس" مثل "G-AB12CD34EF"
+  // الإحصائيات تراها أنت فقط على: https://analytics.google.com   (فارغ "" = مُطفأ)
+  googleAnalyticsId: "",
 
   // رقم الهاتف كما تحب أن يظهر (اتركه فارغاً "" لإخفائه)
   phone: "01020204027",

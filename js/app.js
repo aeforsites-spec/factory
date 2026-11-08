@@ -439,36 +439,36 @@
   });
   document.addEventListener("dragstart", function (e) { if (isPhoto(e.target)) e.preventDefault(); });
 
-  /* ---------------- private visit counter (GoatCounter) ----------------
-     Nothing shows on the site. The numbers are only in your own dashboard:
-     https://<goatcounterCode>.goatcounter.com  (login required). */
-  if (C.goatcounterCode) {
-    var qs = new URLSearchParams(location.search);
-    window.goatcounter = {
-      // count each product once, not once per photo/language: "product.html?id=BM-10"
-      path: function () {
-        var file = location.pathname.split("/").pop() || "index.html";
-        return "/" + file + (qs.get("id") ? "?id=" + qs.get("id") : "");
-      }
-    };
-    var gc = document.createElement("script");
-    gc.async = true;
-    gc.src = "https://gc.zgo.at/count.js";
-    gc.setAttribute("data-goatcounter", "https://" + C.goatcounterCode + ".goatcounter.com/count");
-    document.head.appendChild(gc);
+  /* ---------------- private visit counter (Google Analytics 4) ----------------
+     Nothing shows on the site. The numbers are only in your Google account:
+     https://analytics.google.com  (shortcut: admin.html). */
+  if (C.googleAnalyticsId) {
+    var local = /^(localhost|127\.0\.0\.1|)$/.test(location.hostname); // never count local testing
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    if (!local) {
+      var ga = document.createElement("script");
+      ga.async = true;
+      ga.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(C.googleAnalyticsId);
+      document.head.appendChild(ga);
+    }
+    var gaId = params.get("id");
+    gtag("js", new Date());
+    // count each product once, not once per photo/language: ".../product.html?id=BM-10"
+    gtag("config", C.googleAnalyticsId, {
+      page_location: location.origin + location.pathname + (gaId ? "?id=" + gaId : "")
+    });
 
-    // also count clicks on the contact buttons, e.g. "click: WhatsApp — BM-10"
+    // also count clicks on the contact buttons: whatsapp_click / messenger_click / phone_click / map_click
     document.addEventListener("click", function (e) {
       var a = e.target.closest && e.target.closest("a[href]");
-      if (!a || !window.goatcounter.count) return;
+      if (!a) return;
       var h = a.getAttribute("href"), kind =
-        h.indexOf("wa.me") > -1 ? "WhatsApp" :
-        h.indexOf("m.me") > -1 ? "Messenger" :
-        h.indexOf("tel:") === 0 ? "Phone call" :
-        /google\.com\/maps|maps\.app\.goo\.gl/.test(h) ? "Map" : "";
-      if (!kind) return;
-      var id = new URLSearchParams(location.search).get("id");
-      window.goatcounter.count({ path: "click: " + kind + (id ? " — " + id : ""), title: kind, event: true });
+        h.indexOf("wa.me") > -1 ? "whatsapp" :
+        h.indexOf("m.me") > -1 ? "messenger" :
+        h.indexOf("tel:") === 0 ? "phone" :
+        /google\.com\/maps|maps\.app\.goo\.gl/.test(h) ? "map" : "";
+      if (kind) gtag("event", kind + "_click", { product_code: gaId || "general" });
     });
   }
 
