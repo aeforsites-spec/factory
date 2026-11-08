@@ -28,7 +28,7 @@ window.SITE_CONFIG = {
 
   // عدّاد الزيارات الخاص (Google Analytics) — لا يظهر للزوار. اكتب "معرّف القياس" مثل "G-AB12CD34EF"
   // الإحصائيات تراها أنت فقط على: https://analytics.google.com   (فارغ "" = مُطفأ)
-  googleAnalyticsId: "",
+  googleAnalyticsId: "G-G3NCGTMLSM",
 
   // رقم الهاتف كما تحب أن يظهر (اتركه فارغاً "" لإخفائه)
   phone: "01020204027",
