@@ -439,6 +439,39 @@
   });
   document.addEventListener("dragstart", function (e) { if (isPhoto(e.target)) e.preventDefault(); });
 
+  /* ---------------- private visit counter (GoatCounter) ----------------
+     Nothing shows on the site. The numbers are only in your own dashboard:
+     https://<goatcounterCode>.goatcounter.com  (login required). */
+  if (C.goatcounterCode) {
+    var qs = new URLSearchParams(location.search);
+    window.goatcounter = {
+      // count each product once, not once per photo/language: "product.html?id=BM-10"
+      path: function () {
+        var file = location.pathname.split("/").pop() || "index.html";
+        return "/" + file + (qs.get("id") ? "?id=" + qs.get("id") : "");
+      }
+    };
+    var gc = document.createElement("script");
+    gc.async = true;
+    gc.src = "https://gc.zgo.at/count.js";
+    gc.setAttribute("data-goatcounter", "https://" + C.goatcounterCode + ".goatcounter.com/count");
+    document.head.appendChild(gc);
+
+    // also count clicks on the contact buttons, e.g. "click: WhatsApp — BM-10"
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest && e.target.closest("a[href]");
+      if (!a || !window.goatcounter.count) return;
+      var h = a.getAttribute("href"), kind =
+        h.indexOf("wa.me") > -1 ? "WhatsApp" :
+        h.indexOf("m.me") > -1 ? "Messenger" :
+        h.indexOf("tel:") === 0 ? "Phone call" :
+        /google\.com\/maps|maps\.app\.goo\.gl/.test(h) ? "Map" : "";
+      if (!kind) return;
+      var id = new URLSearchParams(location.search).get("id");
+      window.goatcounter.count({ path: "click: " + kind + (id ? " — " + id : ""), title: kind, event: true });
+    });
+  }
+
   /* ---------------- boot ---------------- */
   renderHeader();
   renderFooter();
