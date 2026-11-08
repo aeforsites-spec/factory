@@ -23,8 +23,8 @@ window.SITE_CONFIG = {
   // اسم صفحة الفيسبوك كما يظهر في الرابط facebook.com/XXXX  (يُستخدم للماسنجر m.me/XXXX)
   messengerUsername: "asabergad",
 
-  // رابط صفحة الفيسبوك كاملاً
-  facebookUrl: "https://www.facebook.com/asabergad",
+  // رابط صفحة الفيسبوك كاملاً (فارغ "" = مخفي). لإظهاره: "https://www.facebook.com/asabergad"
+  facebookUrl: "",
 
   // رقم الهاتف كما تحب أن يظهر (اتركه فارغاً "" لإخفائه)
   phone: "01020204027",
