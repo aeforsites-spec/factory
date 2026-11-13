@@ -293,7 +293,7 @@ window.PRODUCTS = [
       en: "Multi-cavity hollow block mold with its matching tamper head, made of heavy steel plate and precisely cut."
     },
     specs: ASK,
-    images: photos("MD-01", 3)
+    images: photos("MD-01", 5)
   },
   {
     code: "MD-02",
@@ -305,7 +305,7 @@ window.PRODUCTS = [
       en: "Hollow and solid block molds in different sizes and cavity counts. Any size made to order, for any machine."
     },
     specs: ASK,
-    images: photos("MD-02", 11)
+    images: photos("MD-02", 13)
   },
   {
     code: "MD-03",
@@ -330,6 +330,42 @@ window.PRODUCTS = [
     },
     specs: ASK,
     images: photos("MD-04", 1)
+  },
+  {
+    code: "MD-05",
+    category: "molds",
+    featured: false,
+    name: { ar: "اسطمبة بلوك كبيرة لماكينة متحركة", en: "Large Block Mold for Mobile Machines" },
+    description: {
+      ar: "اسطمبة بلوك كبيرة متعددة العيون بقاعدة تغذية أمامية، بتتركب على ماكينات البلوك المتحركة. مصنعة من صاج قوي، ومقاس وعدد العيون حسب الطلب.",
+      en: "Large multi-cavity block mold with a front feed tray, fitted to mobile block machines. Made of heavy steel plate; cavity size and count to order."
+    },
+    specs: ASK,
+    images: photos("MD-05", 2)
+  },
+  {
+    code: "MD-06",
+    category: "molds",
+    featured: false,
+    name: { ar: "اسطمبة إنترلوك (شكل عضمة)", en: "Interlock Paver Mold (Bone Shape)" },
+    description: {
+      ar: "اسطمبة إنترلوك متعددة العيون بالشكل المتعرج (العضمة) المنتشر في الأرصفة والجراجات، مقطعة بدقة ومجمعة بلحام قوي.",
+      en: "Multi-cavity interlock paver mold in the popular wavy 'bone' shape used for sidewalks and parking areas, precisely cut and strongly welded."
+    },
+    specs: ASK,
+    images: photos("MD-06", 1)
+  },
+  {
+    code: "MD-07",
+    category: "molds",
+    featured: false,
+    name: { ar: "اسطمبات بأشكال خاصة حسب الطلب", en: "Custom-Shape Molds to Order" },
+    description: {
+      ar: "بنصنع اسطمبات بأي شكل أو مقاس يطلبه العميل، زي الاسطمبة نصف الدائرية دي. ابعتلنا الشكل والمقاس واحنا ننفذه.",
+      en: "We make molds in any shape or size the customer needs, like this half-round mold. Send us the shape and size and we'll build it."
+    },
+    specs: ASK,
+    images: photos("MD-07", 1)
   },
 
   /* ---------------- عربات ---------------- */
@@ -393,6 +429,18 @@ window.PRODUCTS = [
     specs: ASK,
     images: photos("CT-05", 6)
   },
+  {
+    code: "CT-06",
+    category: "carts",
+    featured: false,
+    name: { ar: "عربة يد صاج بعجلتين كاوتش", en: "Steel Hand Cart with Rubber Wheels" },
+    description: {
+      ar: "عربة يد من الصاج بعجلتين كاوتش، لنقل الخامات والبلوك داخل الموقع. في الصورة دفعة عربات جاهزة قبل الدهان.",
+      en: "Steel-plate hand cart on two rubber wheels for moving materials and blocks around the site. Photo shows a batch ready for painting."
+    },
+    specs: ASK,
+    images: photos("CT-06", 1)
+  },
 
   /* ---------------- مجموعات ---------------- */
   {
@@ -410,14 +458,14 @@ window.PRODUCTS = [
   {
     code: "HS-01",
     category: "sets",
-    featured: false,
+    featured: true,
     name: { ar: "ونش سكيب لتغذية الخلاطة", en: "Skip Hoist for Mixer Feeding" },
     description: {
-      ar: "ونش بذراع وجنزير وسكيب (قادوس) لرفع الخامات وتغذية الخلاطة بسرعة وتقليل المجهود.",
-      en: "Jib hoist with chain and skip bucket for lifting materials and feeding the mixer quickly with less effort."
+      ar: "ونش بعمود وذراع، وموتور بطنبورة سلك، وجنزير وسكيب (قادوس) لرفع الخامات وتغذية الخلاطة بسرعة وتقليل المجهود. مركب على قاعدة حديد قوية، ومتاح بأكثر من لون (أخضر، أزرق، أصفر).",
+      en: "Jib hoist with a column and arm, motor-driven wire-rope drum, chain and skip bucket for lifting materials and feeding the mixer quickly with less effort. Mounted on a heavy steel base; available in different colours (green, blue, yellow)."
     },
     specs: ASK,
-    images: photos("HS-01", 2)
+    images: photos("HS-01", 8)
   },
 
   /* ---------------- من داخل الورشة ---------------- */
@@ -443,6 +491,6 @@ window.PRODUCTS = [
       en: "How our machines are built: cutting and assembling the chassis, then painting, fitting and testing before delivery."
     },
     specs: ASK,
-    images: photos("WS-02", 12)
+    images: photos("WS-02", 14)
   }
 ];

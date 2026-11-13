@@ -24,3 +24,5 @@ images/products/MX-05/2.jpg: 86 10 100 22
 # batch 2: old landline painted next to the company name
 images/products/BM-10/15.jpg: 38 47 50 53
 images/products/MX-03/1.jpg: 45 33 60 38
+# batch 3: private number on the courtyard wall
+images/products/HS-01/4.jpg: 31 13 51 24
