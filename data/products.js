@@ -20,6 +20,7 @@ window.CATEGORIES = [
   { id: "molds",      ar: "اسطمبات",                     en: "Molds" },
   { id: "carts",      ar: "عربات ومعدات نقل",            en: "Carts & Handling" },
   { id: "sets",       ar: "مجموعات إنتاج كاملة",         en: "Complete Sets" },
+  { id: "steel",      ar: "استنباط حديد حسب الطلب",      en: "Custom Steel Fabrication" },
   { id: "workshop",   ar: "من داخل الورشة",              en: "Inside Our Workshop" }
 ];
 
@@ -371,13 +372,13 @@ window.PRODUCTS = [
     code: "MD-07",
     category: "molds",
     featured: false,
-    name: { ar: "اسطمبات حسب المقاسات المطلوبة", en: "Molds Made to Your Sizes" },
+    name: { ar: "اسطمبات بأشكال خاصة حسب الطلب", en: "Custom-Shape Molds to Order" },
     description: {
-      ar: "بنصنع الاسطمبة بالمقاس والشكل اللي العميل محتاجه، من تقطيع القطع لحد التجميع واللحام، زي الاسطمبة نصف الدائرية دي. ابعتلنا المقاسات المطلوبة واحنا ننفذها.",
-      en: "We build each mold to the exact size and shape the customer needs, from cutting the parts to assembly and welding, like this half-round mold. Send us your sizes and we'll make it."
+      ar: "بنصنع اسطمبات بأي شكل أو مقاس يطلبه العميل، زي الاسطمبة نصف الدائرية دي. ابعتلنا الشكل والمقاس واحنا ننفذه.",
+      en: "We make molds in any shape or size the customer needs, like this half-round mold. Send us the shape and size and we'll build it."
     },
     specs: ASK,
-    images: photos("MD-07", 2)
+    images: photos("MD-07", 1)
   },
 
   /* ---------------- عربات ---------------- */
@@ -478,6 +479,20 @@ window.PRODUCTS = [
     },
     specs: ASK,
     images: photos("HS-01", 8)
+  },
+
+  /* ---------------- استنباط حديد ---------------- */
+  {
+    code: "ST-01",
+    category: "steel",
+    featured: false,
+    name: { ar: "استنباط حديد حسب المقاسات المطلوبة", en: "Steel Parts Cut & Made to Your Sizes" },
+    description: {
+      ar: "استنباط وتقطيع قطع الحديد بالمقاسات اللي العميل محتاجها، بأيدي فنيين خبرة. ابعتلنا المقاسات أو الرسمة واحنا ننفذها.",
+      en: "Steel parts cut and fabricated to the exact sizes the customer needs, by experienced craftsmen. Send us your sizes or drawing and we'll make them."
+    },
+    specs: ASK,
+    images: photos("ST-01", 1)
   },
 
   /* ---------------- من داخل الورشة ---------------- */

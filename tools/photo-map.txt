@@ -27,13 +27,14 @@ MD-03: batch2/A4, batch2/A8, batch2/A10
 MD-04: batch2/A17
 MD-05: batch3/C1, batch3/C2
 MD-06: batch3/C10
-MD-07: batch3/C9, batch3/C5
+MD-07: batch3/C9
 CT-01: 4, 5, 37, 48, batch2/T35, batch2/T34, batch2/B21, batch2/T25
 CT-02: 6, 7, batch2/A2
 CT-03: 34, 30, 50
 CT-04: 53, 56, 31, 32
 CT-05: batch2/B13, batch2/B15, batch2/B18, batch2/B16, batch2/B17, batch2/B22
 CT-06: batch3/C6
+ST-01: batch3/C5
 LN-01: 11, 2, 3, 1
 HS-01: batch3/D3, batch3/D6, batch3/D5, batch3/D2, batch3/D1, batch3/D8, 39, batch2/B23
 WS-01: batch2/B12, batch2/T66, batch2/T67, batch2/T47, batch2/T45, batch2/T69, batch2/T19, batch2/T9, batch2/T13, batch2/T15, batch2/T63, batch2/T71
