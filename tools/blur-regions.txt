@@ -1,4 +1,4 @@
-﻿# image : x1 y1 x2 y2 (percent) ; more areas separated by ;
+# image : x1 y1 x2 y2 (percent) ; more areas separated by ;
 # Hides a private phone number painted on equipment / written on the wall.
 images/products/CT-03/1.jpg: 35 32 68 39 ; 77 9 85 25
 images/products/CT-03/2.jpg: 34 26 64 33
@@ -19,7 +19,7 @@ images/products/LN-01/3.jpg: 62 0 86 15
 images/products/BM-10/12.jpg: 76 11 94 22
 images/products/BM-10/13.jpg: 68 10 88 22
 images/products/BM-11/9.jpg: 68 13 88 25
-images/products/WS-02/5.jpg: 68 0 100 12
+images/products/BM-11/14.jpg: 68 0 100 12
 images/products/MX-05/2.jpg: 86 10 100 22
 # batch 2: old landline painted next to the company name
 images/products/BM-10/15.jpg: 38 47 50 53

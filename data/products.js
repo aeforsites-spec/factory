@@ -20,8 +20,7 @@ window.CATEGORIES = [
   { id: "molds",      ar: "اسطمبات",                     en: "Molds" },
   { id: "carts",      ar: "عربات ومعدات نقل",            en: "Carts & Handling" },
   { id: "sets",       ar: "مجموعات إنتاج كاملة",         en: "Complete Sets" },
-  { id: "steel",      ar: "استنباط حديد حسب الطلب",      en: "Custom Steel Fabrication" },
-  { id: "workshop",   ar: "من داخل الورشة",              en: "Inside Our Workshop" }
+  { id: "steel",      ar: "استنباط حديد حسب الطلب",      en: "Custom Steel Fabrication" }
 ];
 
 /* helper: builds ["images/products/CODE/1.jpg", ...] */
@@ -148,28 +147,16 @@ window.PRODUCTS = [
     code: "BM-11",
     category: "mobile",
     featured: true,
-    name: { ar: "ماكينة بلوك متحركة كبيرة بطارة توجيه وذراع تحميل", en: "Large Mobile Block Machine with Steering Wheel & Loading Arm" },
+    name: { ar: "ماكينة طوب طراز إنجليزي", en: "English-Type Brick Machine" },
     description: {
-      ar: "ماكينة بلوك متحركة كبيرة على عجل حديد، بطارة توجيه لتحريك الماكينة بين الصفوف، وذراع تحميل طويل، وصندوق تغذية، وموتور هزاز. مناسبة للإنتاج الكبير في الأحواش والمواقع المفتوحة.",
-      en: "Large mobile block machine on steel wheels, with a steering wheel for moving between rows, a long loading arm, a feed box and a vibration motor. Built for high output in open yards and sites."
+      ar: "ماكينة طوب طراز إنجليزي كبيرة على عجل حديد، بطارة توجيه لتحريك الماكينة بين الصفوف، وذراع تحميل طويل، وصندوق تغذية، وموتور هزاز. مناسبة للإنتاج الكبير في الأحواش والمواقع المفتوحة. في الصور كمان مراحل تصنيعها عندنا: من الشاسيه الخام لحد الدهان والتجميع.",
+      en: "Large English-type brick machine on steel wheels, with a steering wheel for moving between rows, a long loading arm, a feed box and a vibration motor. Built for high output in open yards and sites. The photos also show how we build it: from the raw chassis to painting and assembly."
     },
     specs: {
       ar: [["التحريك", "طارة توجيه"], ["التشغيل", "موتور هزاز كهرباء"]].concat(ASK.ar),
       en: [["Movement", "Steering wheel"], ["Power", "Electric vibration motor"]].concat(ASK.en)
     },
-    images: photos("BM-11", 9)
-  },
-  {
-    code: "BM-12",
-    category: "mobile",
-    featured: false,
-    name: { ar: "ماكينة طوب طراز إنجليزي", en: "English-Type Brick Machine" },
-    description: {
-      ar: "ماكينة طوب طراز إنجليزي بشاسيه حديد قوي على عجل. في الصورة دفعة ماكينات أثناء التصنيع والتجميع في الورشة قبل الدهان.",
-      en: "English-type brick machine on a heavy steel chassis with wheels. The photo shows a batch of machines being built and assembled in our workshop before painting."
-    },
-    specs: ASK,
-    images: photos("BM-12", 1)
+    images: photos("BM-11", 21)
   },
 
   /* ---------------- ماكينات بلوك ثابتة ---------------- */
@@ -318,7 +305,7 @@ window.PRODUCTS = [
       en: "Hollow and solid block molds in different sizes and cavity counts. Any size made to order, for any machine."
     },
     specs: ASK,
-    images: photos("MD-02", 13)
+    images: photos("MD-02", 20)
   },
   {
     code: "MD-03",
@@ -342,7 +329,7 @@ window.PRODUCTS = [
       en: "Mold for perforated bricks with a large number of cavities per cycle."
     },
     specs: ASK,
-    images: photos("MD-04", 1)
+    images: photos("MD-04", 4)
   },
   {
     code: "MD-05",
@@ -354,7 +341,7 @@ window.PRODUCTS = [
       en: "Large multi-cavity block mold with a front feed tray, fitted to mobile block machines. Made of heavy steel plate; cavity size and count to order."
     },
     specs: ASK,
-    images: photos("MD-05", 2)
+    images: photos("MD-05", 4)
   },
   {
     code: "MD-06",
@@ -493,31 +480,5 @@ window.PRODUCTS = [
     },
     specs: ASK,
     images: photos("ST-01", 1)
-  },
-
-  /* ---------------- من داخل الورشة ---------------- */
-  {
-    code: "WS-01",
-    category: "workshop",
-    featured: false,
-    name: { ar: "من الورشة: تصنيع الاسطمبات", en: "Workshop: Making the Molds" },
-    description: {
-      ar: "صور حقيقية من ورشتنا أثناء تقطيع ولحام وتجميع الاسطمبات بأيدي فنيين خبرة. كل اسطمبة بتتعمل عندنا من الصفر وبالمقاس اللي تطلبه.",
-      en: "Real photos from our workshop while cutting, welding and assembling molds by experienced craftsmen. Every mold is made in-house from scratch, to the size you ask for."
-    },
-    specs: ASK,
-    images: photos("WS-01", 12)
-  },
-  {
-    code: "WS-02",
-    category: "workshop",
-    featured: false,
-    name: { ar: "من الورشة: تصنيع الماكينات", en: "Workshop: Building the Machines" },
-    description: {
-      ar: "مراحل تصنيع الماكينات عندنا: من تقطيع وتجميع الشاسيه، للدهان والتركيب والتجربة قبل التسليم.",
-      en: "How our machines are built: cutting and assembling the chassis, then painting, fitting and testing before delivery."
-    },
-    specs: ASK,
-    images: photos("WS-02", 12)
   }
 ];

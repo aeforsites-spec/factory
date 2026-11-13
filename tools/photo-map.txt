@@ -1,6 +1,6 @@
 # Product code : photos. A number = Nth photo in F:\site sorted by name (batch 1).
 # batch2/XX = F:\site\batch2\XX.jpeg (batch 2, unique photos only). batch3/XX = F:\site\batch3\XX.jpeg (Nov 13). First photo = main photo.
-# Batch 3 skipped: C4 (loose parts), C7 (blurry), C13 (= C12 with text), C15 (= CT-02 photo 3), D4 (= D3), D7/D9 (= D8)
+# Batch 3 skipped: C3 (= WS photo of same frames, now BM-11), C4 (loose parts), C7 (blurry), C13 (= C12 with text), C15 (= CT-02 photo 3), D4 (= D3), D7/D9 (= D8)
 # Batch 1 skipped as near-duplicates or unfinished: 10, 22, 58, 66, 94
 BM-01: 17, 90, 91, 12, 14, 33
 BM-02: 49, 52, 54, 51, 47, 96, 99, 97, 100, 95
@@ -12,8 +12,7 @@ BM-07: 21
 BM-08: 84, 85, 89
 BM-09: 87, 88, 93
 BM-10: batch2/T58, batch2/T61, batch2/T26, batch2/T21, batch2/T30, batch2/T59, batch2/B4, batch2/T51, batch2/T22, batch2/T20, batch2/T16, batch2/T28, batch2/T40, batch2/A3, batch2/B20
-BM-12: batch3/C3
-BM-11: batch2/T37, batch2/B3, batch2/B5, batch2/T23, batch2/T27, batch2/T56, batch2/T1, batch2/T17, batch2/T54
+BM-11: batch2/T37, batch2/B3, batch2/B5, batch2/T23, batch2/T27, batch2/T56, batch2/T1, batch2/T17, batch2/T54, batch2/T43, batch2/T44, batch2/T4, batch2/T6, batch2/T29, batch2/T31, batch2/T32, batch2/T2, batch2/T53, batch2/T57, batch2/T38, batch2/T41
 PR-01: 15, 20, 19, 16
 PR-02: 55, 57, 70, 73
 MX-01: 36, 8, 9, 38, 35, 40, 74, 77, batch2/B6
@@ -22,10 +21,10 @@ MX-03: batch2/A5
 MX-04: batch2/A9, batch2/A12, batch2/A11, batch2/A6, batch2/A7, batch2/A13, batch2/A15
 MX-05: batch2/T74, batch2/T73, batch2/T75
 MD-01: 23, 28, 27, batch3/C12, batch3/C8
-MD-02: 24, 26, 29, 25, 98, 92, batch2/T62, batch2/T60, batch2/B2, batch2/B8, batch2/T65, batch3/C14, batch3/C11
+MD-02: 24, 26, 29, 25, 98, 92, batch2/T62, batch2/T60, batch2/B2, batch2/B8, batch2/T65, batch3/C14, batch3/C11, batch2/B12, batch2/T19, batch2/T9, batch2/T13, batch2/T15, batch2/T63, batch2/T71
 MD-03: batch2/A4, batch2/A8, batch2/A10
-MD-04: batch2/A17
-MD-05: batch3/C1, batch3/C2
+MD-04: batch2/A17, batch2/T47, batch2/T45, batch2/T69
+MD-05: batch3/C1, batch3/C2, batch2/T66, batch2/T67
 MD-06: batch3/C10
 MD-07: batch3/C9
 CT-01: 4, 5, 37, 48, batch2/T35, batch2/T34, batch2/B21, batch2/T25
@@ -37,5 +36,3 @@ CT-06: batch3/C6
 ST-01: batch3/C5
 LN-01: 11, 2, 3, 1
 HS-01: batch3/D3, batch3/D6, batch3/D5, batch3/D2, batch3/D1, batch3/D8, 39, batch2/B23
-WS-01: batch2/B12, batch2/T66, batch2/T67, batch2/T47, batch2/T45, batch2/T69, batch2/T19, batch2/T9, batch2/T13, batch2/T15, batch2/T63, batch2/T71
-WS-02: batch2/T43, batch2/T44, batch2/T4, batch2/T6, batch2/T29, batch2/T31, batch2/T32, batch2/T53, batch2/T57, batch2/T38, batch2/T41, batch2/T2
