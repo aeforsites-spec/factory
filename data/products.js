@@ -158,6 +158,18 @@ window.PRODUCTS = [
     },
     images: photos("BM-11", 9)
   },
+  {
+    code: "BM-12",
+    category: "mobile",
+    featured: false,
+    name: { ar: "ماكينة طوب طراز إنجليزي", en: "English-Type Brick Machine" },
+    description: {
+      ar: "ماكينة طوب طراز إنجليزي بشاسيه حديد قوي على عجل. في الصورة دفعة ماكينات أثناء التصنيع والتجميع في الورشة قبل الدهان.",
+      en: "English-type brick machine on a heavy steel chassis with wheels. The photo shows a batch of machines being built and assembled in our workshop before painting."
+    },
+    specs: ASK,
+    images: photos("BM-12", 1)
+  },
 
   /* ---------------- ماكينات بلوك ثابتة ---------------- */
   {
@@ -359,13 +371,13 @@ window.PRODUCTS = [
     code: "MD-07",
     category: "molds",
     featured: false,
-    name: { ar: "اسطمبات بأشكال خاصة حسب الطلب", en: "Custom-Shape Molds to Order" },
+    name: { ar: "اسطمبات حسب المقاسات المطلوبة", en: "Molds Made to Your Sizes" },
     description: {
-      ar: "بنصنع اسطمبات بأي شكل أو مقاس يطلبه العميل، زي الاسطمبة نصف الدائرية دي. ابعتلنا الشكل والمقاس واحنا ننفذه.",
-      en: "We make molds in any shape or size the customer needs, like this half-round mold. Send us the shape and size and we'll build it."
+      ar: "بنصنع الاسطمبة بالمقاس والشكل اللي العميل محتاجه، من تقطيع القطع لحد التجميع واللحام، زي الاسطمبة نصف الدائرية دي. ابعتلنا المقاسات المطلوبة واحنا ننفذها.",
+      en: "We build each mold to the exact size and shape the customer needs, from cutting the parts to assembly and welding, like this half-round mold. Send us your sizes and we'll make it."
     },
     specs: ASK,
-    images: photos("MD-07", 1)
+    images: photos("MD-07", 2)
   },
 
   /* ---------------- عربات ---------------- */
@@ -491,6 +503,6 @@ window.PRODUCTS = [
       en: "How our machines are built: cutting and assembling the chassis, then painting, fitting and testing before delivery."
     },
     specs: ASK,
-    images: photos("WS-02", 14)
+    images: photos("WS-02", 12)
   }
 ];
